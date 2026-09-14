@@ -4,3 +4,6 @@
 
 # Environment variables - never commit
 .env
+
+# PHP error log
+error_log
