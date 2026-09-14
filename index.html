@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VS005E7BJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VS005E7BJ9');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo/spidac.png" type="image/png">
+
+    <meta name="description" content="SPIDAC are privacy technology specialists helping businesses achieve compliance, operationalize privacy, and build lasting trust. Expert consulting, implementation, and training.">
+    <meta property="og:title" content="SPIDAC - Privacy Technology Specialists">
+    <meta property="og:description" content="SPIDAC are privacy technology specialists helping businesses achieve compliance, operationalize privacy, and build lasting trust. Expert consulting, implementation, and training.">
+    <meta property="og:type" content="website">
+    <title>SPIDAC - Privacy Technology Specialists</title>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8e4b60ca-6840-4d39-996d-d869f0333afc" data-blockingmode="auto" type="text/javascript"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+      /* Slider container */
+.tech-slider {
+  overflow: hidden;
+  width: 100%;
+  background: transparent; /* keeps same background as section */
+}
+.who-we-are-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+.tech-slider-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+
+.tech-slide {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-slide img {
+  max-width: 100px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* Keyframes for smooth sliding */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* move half of the duplicated track */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) { .tech-slide img { max-width: 80px; } }
+@media (max-width: 768px) { .tech-slide img { max-width: 60px; } }
+@media (max-width: 480px) { .tech-slide img { max-width: 50px; } }
+
+/* optional hover pause */
+.tech-slider:hover .tech-slider-track {
+  animation-play-state: paused;
+}
+
+
+        body {
+            font-family: 'Museo Sans', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header — see spidac-header.css */
+         .card-button {
+             display: inline-block;
+             background: #1e2a5e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+    margin-top: 1.2rem;
+}
+
+.card-button:hover {
+    background: #2c4aa0;
+}
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* WHO WE ARE Quote Styling */
+.who-quote {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 1.3rem;
+    color: #000; /* Accent color matching your palette */
+    line-height: 1.8;
+    font-weight: 500;
+    border-left: 6px solid #1e2a5e; /* subtle accent */
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+
+        /* .logo, .nav-links, .nav-cta — see spidac-header.css */
+
+
+        /* Hero Section */
+.hero {
+  position: relative;
+  color: #fff;
+  padding: 130px 0 100px;
+  margin-top: 64px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0d1832 0%, #1e2a5e 60%, #2c3e7a 100%);
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            max-width: 520px;
+            opacity: 0.8;
+            line-height: 1.75;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #0d1832;
+            padding: 13px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: #e8edf5;
+            transform: translateY(-2px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: #f5f7fb;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(13,24,50,0.07);
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+            border: 1px solid #e8eaf0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(13,24,50,0.12);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1.2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Training Section */
+        .training {
+            padding: 80px 0;
+            background: white;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .about-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .about-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .about-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1e2a5e;
+            font-weight: 700;
+        }
+
+        .about-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: white;
+            padding: 4rem 0;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .team-card:hover {
+            border-color: #1e2a5e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(30, 42, 94, 0.1);
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .team-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #1e2a5e;
+            font-weight: 600;
+        }
+
+        .team-role {
+            color: #2c4aa0;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .team-bio {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack {
+            padding: 4rem 0;
+            border-radius: 20px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .tech-stack h3 {
+            color: white;
+            font-size: 2.7rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .tech-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tech-logo {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            min-height: 150px;
+        }
+
+        .tech-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .tech-logo-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+        }
+
+        .tech-logo h4 {
+            color: #1e2a5e;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .training-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .training-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 15px;
+            border-left: 5px solid #1e2a5e;
+            transition: all 0.3s ease;
+        }
+
+        .training-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .training-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+            font-weight: 600;
+        }
+
+        .training-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .training-features {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .training-features li {
+            color: #555;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .training-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1e2a5e;
+            font-weight: bold;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: #0d1832;
+            padding: 50px 0;
+            color: white;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.3rem;
+            letter-spacing: -1px;
+        }
+
+        .stat-item p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Value Props Section */
+        .value-props {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: left;
+            padding: 2rem 2rem 2.2rem;
+            border: 1px solid #e8eaf0;
+            border-radius: 16px;
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+        .value-card:hover {
+            box-shadow: 0 8px 32px rgba(13,24,50,0.1);
+            transform: translateY(-3px);
+        }
+
+        .value-icon {
+            width: 52px;
+            height: 52px;
+            background: #eef1fa;
+            border-radius: 12px;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #1e2a5e;
+        }
+
+        .value-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.6rem;
+            color: #0d1832;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Partnership Section */
+        .partnership {
+            padding: 100px 0;
+            background: #0d1832;
+            color: white;
+            text-align: center;
+        }
+
+        .partnership h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .partnership-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 1rem;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button-secondary {
+            background: white;
+            color: #0d1832;
+            padding: 13px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .cta-button-secondary:hover {
+            background: #e8edf5;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #080f1f;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 2rem;
+            color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+.ceo-quote {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    font-style: italic;
+    color: #000; /* matches your brand accent */
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.ceo-quote .ceo-name {
+    font-style: normal;
+    font-weight: 600;
+    color: #ff6b6b; /* accent for the name */
+    margin-top: 0.8rem;
+    font-size: 1rem;
+}
+
+/* Hamburger + mobile nav — see spidac-header.css */
+
+
+        
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17516084686">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17516084686');
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="spidac-header.css">
+<link href="https://fonts.cdnfonts.com/css/hangyaboly" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container" style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
+    
+    <!-- Left: Image -->
+  <div class="hero-image" style="flex: 1.2; min-width: 350px;">
+  <img src="banner2.jpg" alt="Technical Experts" loading="eager"
+       style="width: 100%; height: auto; max-width: 600px; border-radius: 15px; box-shadow: 0 12px 28px rgba(0,0,0,0.3);">
+</div>
+
+    
+    <!-- Right: Text -->
+    <div class="hero-text" style="flex: 1; min-width: 300px; color: #fff;">
+      <h1>Privacy technology, done properly.</h1>
+      <p class="hero-description">
+        We help organisations select, implement, and get the most out of their privacy tools — so compliance becomes an operation, not a burden.
+      </p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="services.html" class="cta-button">See Our Services</a>
+        <a href="contact.php" style="color:rgba(255,255,255,0.7);text-decoration:none;padding:13px 0;font-size:1rem;font-weight:500;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Get in touch &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <h3>50+</h3>
+                    <p>Clients Served</p>
+                </div>
+                <div class="stat-item reveal reveal-delay-1">
+                    <h3>15+</h3>
+                    <p>Years Expertise</p>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <h3>3</h3>
+                    <p>Core Services</p>
+                </div>
+                <div class="stat-item reveal reveal-delay-3">
+                    <h3>100%</h3>
+                    <p>Compliance Focus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- WHO WE ARE Section -->
+<section class="value-props who-we-are" style="background:#f5f7fb;">
+    <div class="container" style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
+        
+        <!-- Left: Text -->
+        <div class="who-we-are-text" style="flex: 1; min-width: 300px;">
+            <h3 class="section-title">WHO WE ARE</h3>
+
+            <!-- Styled Quote -->
+            <p class="who-quote">
+                "Navigating privacy and compliance is becoming increasingly complex across all sectors!"
+            </p>
+
+            <p>
+                Organizations struggle to fully leverage privacy technology and automation. At <strong>SPIDAC</strong>, we believe privacy management should be smart, seamless, and future-ready.
+            </p>
+
+            <p>
+                We provide consulting, training, and implementation support that transforms complex privacy requirements into streamlined, technology-enabled operations. This helps organizations <strong>increase efficiency, reduce risk, and unlock the full potential</strong> of privacy tools and automation.
+            </p>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="who-we-are-image" style="flex: 1; min-width: 300px;">
+         <img src="banner1.JPG" alt="Who we are" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 12px 35px rgba(0,0,0,0.15);">
+        </div>
+
+    </div>
+</section>
+
+
+
+
+    
+    <!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                <h3>Privacy Tech Implementation</h3>
+                <p>We help you pick the right privacy technology, get it deployed properly, and make sure your team can actually use it.</p>
+                <a href="https://spidac.com/privacytechimplementation.html" class="card-button" target="_blank">Know More <i class="fas fa-arrow-right" style="font-size:0.8rem;margin-left:4px;"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon"><i class="fas fa-gears"></i></div>
+                <h3>Privacy Design &amp; Automation Advisory</h3>
+                <p>We build privacy workflows that cut out manual work, so your team spends less time on repetitive tasks and more time on what matters.</p>
+                <a href="https://spidac.com/privacydesignautomation.html" class="card-button" target="_blank">Know More <i class="fas fa-arrow-right" style="font-size:0.8rem;margin-left:4px;"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card reveal reveal-delay-3">
+                <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Privacy &amp; Data Protection Training</h3>
+                <p>Practical training for individuals and teams, built around your tools, your policies, and how you actually work.</p>
+                <a href="https://spidac.com/training.html" class="card-button" target="_blank">Know More <i class="fas fa-arrow-right" style="font-size:0.8rem;margin-left:4px;"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+   
+
+    <!-- Value Proposition Section -->
+    <section class="value-props">
+        <div class="container">
+            <h2 class="section-title">Why Work With Us</h2>
+            <p class="section-subtitle">Organizations that work with SPIDAC gain streamlined, technology-enabled privacy operations, reduced compliance risk, and teams equipped to maintain best-in-class privacy practices.</p>
+            <div class="value-grid">
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Expertise &amp; Insight</h3>
+                    <p>We bridge the gap between regulatory requirements, technical implementation, and operational efficiency to solve privacy challenges with precision.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Technology &amp; Innovation</h3>
+                    <p>With OneTrust veterans and seasoned tech experts, we ensure privacy tools are implemented effectively, unlocking their full potential and driving automation for operational excellence.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-3">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Collaboration &amp; Clarity</h3>
+                    <p>We work as true partners with your teams, tailoring solutions to your culture and processes while providing clear guidance and actionable insights every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <section class="tech-stack" id="tech-stack">
+  <div class="container">
+    <h2 class="section-title">Our Tech Stack</h2>
+    <p class="section-subtitle" style="margin-bottom:2rem;">We have deep expertise across leading privacy technology platforms.</p>
+    <div class="tech-slider">
+      <div class="tech-slider-track">
+        <div class="tech-slide"><img src="logos/onetrust.png" alt="OneTrust" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/securitii.png" alt="Securiti" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/trustarc.png" alt="TrustArc" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/bigid.png" alt="BigID" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/datagrail.png" alt="DataGrail" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/collibra_logo.jpg" alt="Collibra" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/sourcepoint.jpg" alt="Sourcepoint" loading="lazy"></div>
+
+        <!-- duplicate slides for seamless loop -->
+        <div class="tech-slide"><img src="logos/onetrust.png" alt="OneTrust" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/securitii.png" alt="Securiti" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/trustarc.png" alt="TrustArc" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/bigid.png" alt="BigID" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/datagrail.png" alt="DataGrail" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/collibra_logo.jpg" alt="Collibra" loading="lazy"></div>
+        <div class="tech-slide"><img src="logos/sourcepoint.jpg" alt="Sourcepoint" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Partnership Section
+    <section class="partnership">
+        <div class="container">
+            <h2>OneTrust Certified</h2>
+            <div class="partnership-badge">
+                #1 OneTrust Global Boutique Partner
+            </div>
+            <div class="partnership-badge">
+                15+ Years Privacy Tech Expertise
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- Final CTA -->
+    <section class="partnership" id="contact">
+        <div class="container" style="text-align:center;">
+            <h2 style="font-size:2.2rem;font-weight:700;margin-bottom:1rem;line-height:1.3;">
+                Ready to transform your privacy operations?
+            </h2>
+            <p style="font-size:1.1rem;opacity:0.85;max-width:600px;margin:0 auto 2rem;">
+                Let's discuss how SPIDAC can help your organisation achieve compliance, reduce risk, and unlock the full potential of privacy technology.
+            </p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                <a href="contact.php" class="cta-button-secondary">Get in Touch <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+                <a href="services.html" class="cta-button-secondary" style="background:transparent;border:2px solid white;color:white;">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+</script>
+<script src="include.js"></script>
+</body>
+</html>

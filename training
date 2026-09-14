@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VS005E7BJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VS005E7BJ9');
+</script>
+
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.cdnfonts.com/css/hangyaboly" rel="stylesheet">
+
+    
+       <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8e4b60ca-6840-4d39-996d-d869f0333afc" data-blockingmode="auto" type="text/javascript"></script>
+      
+
+    <title>Privacy Training - SPIDAC Privacy Technology Specialists</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+.card-button {
+    display: inline-block;
+    background: #1e2a5e;   /* main accent color */
+    color: white;
+    padding: 8px 18px;      /* smaller padding */
+    font-size: 0.95rem;     /* smaller text */
+    border-radius: 25px;    /* softer pill shape */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 0.8rem;
+}
+
+.card-button:hover {
+    background: #;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+}
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* WHO WE ARE Quote Styling */
+.who-quote {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 1.3rem;
+    color: #000; /* Accent color matching your palette */
+    line-height: 1.8;
+    font-weight: 500;
+    border-left: 6px solid #1e2a5e; /* subtle accent */
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+
+      .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e2a5e;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Hangyaboly', sans-serif;
+}
+
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #1e2a5e;
+        }
+
+        /* Hero Section */
+      /* HERO with blurred background banner */
+.hero {
+  position: relative;
+  color: #fff;
+  padding: 120px 0 80px;
+  text-align: center;
+  margin-top: 70px;
+  overflow: hidden;
+  background: transparent !important; /* kill the old gradient */
+  isolation: isolate;                 /* contain z-index stacking */
+}
+
+.hero > .container {
+  position: relative; /* keep text above bg layers */
+  z-index: 1;
+}
+
+.modules {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.modules h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #1e2a5e;
+  font-weight: 700;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.module-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+  color: #1e2a5e;
+  border-top: 4px solid #1e2a5e;
+  border-bottom: 4px solid #1e2a5e;
+  border-left: 4px solid #1e2a5e;
+  border-right: 4px solid #1e2a5e;
+
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+
+/* Blurred banner image + fallback gradient */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* First layer: image (shown if it loads). Second: gradient fallback */
+  background-image: url("banner.png"), linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+  background-size: cover, 100% 100%;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+
+  filter: blur(14px);
+  transform: scale(1.08);  /* hide blur edge */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Optional dark tint for readability */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 26, 64, 0.45);
+  z-index: 0;              /* same layer as ::before; ::after paints on top */
+  pointer-events: none;
+}
+
+
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #1e2a5e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            color: #1e2a5e;
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid #1e2a5e;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Training Section */
+        .training {
+            padding: 80px 0;
+            background: white;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .about-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+       /* Slider container */
+.tech-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tech-slider-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: slide 20s linear infinite; /* adjust duration as needed */
+}
+
+/* Individual slides */
+.tech-slide {
+  flex: 0 0 calc(100% / 6); /* 6 logos visible at a time */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-slide img {
+  max-width: 100px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* Keyframes for sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* moves half of the track (because you duplicated slides) */
+  }
+}
+
+/* Responsive: show fewer logos on smaller screens */
+@media (max-width: 992px) {
+  .tech-slide {
+    flex: 0 0 calc(100% / 4);
+  }
+}
+@media (max-width: 768px) {
+  .tech-slide {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+@media (max-width: 480px) {
+  .tech-slide {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+
+        .about-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .about-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1e2a5e;
+            font-weight: 700;
+        }
+
+        .about-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: white;
+            padding: 4rem 0;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .team-card:hover {
+            border-color: #1e2a5e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(30, 42, 94, 0.1);
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .team-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #1e2a5e;
+            font-weight: 600;
+        }
+
+        .team-role {
+            color: #ff6b6b;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .team-bio {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack {
+            padding: 4rem 0;
+            border-radius: 20px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .tech-stack h3 {
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .tech-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tech-logo {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            min-height: 150px;
+        }
+
+        .tech-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .tech-logo-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+        }
+
+        .tech-logo h4 {
+            color: #1e2a5e;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .training-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .training-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 15px;
+            border-left: 5px solid #1e2a5e;
+            transition: all 0.3s ease;
+        }
+
+        .training-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .training-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+            font-weight: 600;
+        }
+
+        .training-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .training-features {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .training-features li {
+            color: #555;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .training-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1e2a5e;
+            font-weight: bold;
+        }
+
+        /* Value Props Section */
+        .value-props {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e2a5e;
+        }
+
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Partnership Section */
+        .partnership {
+            padding: 80px 0;
+            background: #1e2a5e;
+            color: white;
+            text-align: center;
+        }
+
+        .partnership h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .partnership-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 1rem;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button-secondary {
+            background: white;
+            color: #1e2a5e;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button-secondary:hover {
+            background: #f5f5f5;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 2rem;
+            color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .service-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .service-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .service-card:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+.ceo-quote {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    font-style: italic;
+    color: #000; /* matches your brand accent */
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.ceo-quote .ceo-name {
+    font-style: normal;
+    font-weight: 600;
+    color: #ff6b6b; /* accent for the name */
+    margin-top: 0.8rem;
+    font-size: 1rem;
+}
+
+.enroll-button {
+display: inline-block;
+background: #1e2a5e;
+color: white;
+padding: 14px 30px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: 600;
+font-size: 1.1rem;
+margin-top: 2rem;
+transition: all 0.3s ease;
+}
+.enroll-button:hover {
+background: #1e2a5e;
+transform: translateY(-2px);
+}
+
+        /* Hamburger button styling */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1e2a5e;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* show hamburger */
+    }
+
+    .nav-links {
+        display: none; /* hide menu by default */
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 70px; /* under the header */
+        right: 20px;
+        background: #fff;
+        padding: 1rem 2rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* show menu when active */
+    }
+}
+
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17516084686"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17516084686');
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+
+<body>
+    <!-- Header -->
+    <header>
+      <nav class="container">
+    <a href="/" class="logo">SPIDAC</a>
+
+    <!-- Hamburger button (only shows on mobile) -->
+    <button class="hamburger" aria-label="Toggle Menu">☰</button>
+
+    <!-- Nav Links -->
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.php">Contact</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Privacy & Data Protection Training</h1>
+            <p class="subtitle">Equipping individuals and organizations with the knowledge and skills to make privacy a business advantage.</p>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="services" id="training">
+        <div class="container">
+            <h2 class="section-title">Our Training Programs</h2>
+            <p>
+                We deliver tailored privacy and data protection training programs for both individuals and teams. From privacy awareness and regulatory compliance to hands-on technology training, our programs help staff understand, adopt, and embed privacy best practices in everyday operations.
+            </p>
+
+            <h3 style="margin-top: 2rem; color:#1e2a5e;">Our Approach</h3>
+            <ul style="margin-left: 1.2rem; color:#555; line-height: 1.6;">
+                <li><strong>Privacy Awareness Training:</strong> Build foundational knowledge on privacy principles, regulations, and organizational policies.</li>
+                <li><strong>Role-Based Training:</strong> Specialized training for Privacy Professionals, IT teams, HR staff, and other key roles.</li>
+                <li><strong>Hands-On Technology Training:</strong> Practical guidance on using privacy and compliance tools effectively.</li>
+                <li><strong>Scenario-Based Workshops:</strong> Real-world exercises to reinforce learning and improve response to privacy challenges.</li>
+                <li><strong>Knowledge Assessment & Certification:</strong> Evaluate understanding and provide completion certification.</li>
+                <li><strong>Ongoing Training & Updates:</strong> Continuous learning to stay current with evolving regulations and tools.</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem; color:#1e2a5e;">Key Deliverables</h3>
+            <ul style="margin-left: 1.2rem; color:#555; line-height: 1.6;">
+                <li>Tailored Training Curriculum & Materials</li>
+                <li>Role-Specific Training Guides</li>
+                <li>Workshop Exercises & Case Studies</li>
+                <li>Training Completion Reports & Certification</li>
+                <li>Ongoing Training & Update Plan</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Featured Program -->
+    <section class="training" id="program">
+        <div class="container">
+            <h2 class="section-title">Upcoming Training Program</h2>
+            <p style="font-size:1.2rem; color:#555; margin-bottom:2rem;">
+              Whether you’re looking to launch a career in privacy or enhance your current skill set, our training programs provide the knowledge and practical skills you need to succeed.
+            </p>
+
+            <div class="training-card">
+                <h3>Privacy Career Starter Program: Practitioner Certificate in Data Protection</h3>
+                <p><strong>Program:</strong> 3-month intensive training in Data Privacy and Protection.</p>
+                <p><strong>Focus:</strong> This course is designed to equip aspiring professionals with the skills and tools needed to launch a successful career in privacy.</p>
+                
+
+                <h4 style="margin-top:1.5rem; color:#1e2a5e;">Content</h4>
+                <ul class="training-features">
+                    <li>Foundations of privacy laws and regulations (GDPR, CCPA, PIPEDA, etc.)</li>
+                    <li>Understanding data subject rights and DSAR management</li>
+                    <li>Consent management and Privacy by Design principles</li>
+                    <li>Data discovery, mapping, and classification techniques</li>
+                    <li>Hands-on training with privacy platforms (e.g., OneTrust)</li>
+                    <li>Building privacy policies, frameworks, and compliance processes</li>
+                    <li>Privacy risk assessment and mitigation strategies</li>
+                    <li>Preparing for entry-level privacy roles (Privacy Analyst, Consultant, DPO support)</li>
+                </ul>
+
+                <h4 style="margin-top:1.5rem; color:#1e2a5e;">Course Benefits</h4>
+                <ul class="training-features">
+                    <li>Practical, hands-on experience with privacy workflows and tools</li>
+                    <li>Exposure to real-world use cases and case studies</li>
+                    <li>Interview preparation and career guidance for privacy roles</li>
+                    <li>Mentorship from experienced privacy and technology professionals</li>
+                    <li>Certificate of Completion from SPIDAC Consulting</li>
+                    <li>Pathway to roles such as Privacy Analyst, Privacy Consultant, Privacy Engineer or Privacy Manager</li>
+                </ul>
+                 <p style="font-size:1.2rem; color:#1e2a5e; font-weight:600; margin: 1rem 0;">
+       - £599 GBP
+    </p>
+
+                     <h4 style="margin-top:1.5rem; color:#   ;">Upcoming Cohort: September 22 </h4>
+                     <h4 style="margin-top:1.5rem; color:#1e2a5e;">Next Cohort: October 27 </h4>
+                     <h4 style="margin-top:1.5rem; color:#1e2a5e;">Next Cohort: November (TBD) </h4>
+                     <h4 style="margin-top:1.5rem; color:#1e2a5e;">Next Cohort: December (TBD) </h4>
+
+
+
+
+
+                
+
+                <a href="https://forms.gle/hoXoqnyc9xnZL3bR8" target="_blank" class="enroll-button">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-props">
+        <div class="container">
+            <h3 class="section-title">Why Work With Us</h3>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto;">
+                Organizations that work with SPIDAC gain streamlined, technology-enabled privacy operations, reduced compliance risk, and teams equipped to maintain best-in-class privacy practices.
+            </p>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Expertise & Insight</h3>
+                    <p>We bridge the gap between regulatory requirements, technical implementation, and operational efficiency to solve privacy challenges with precision.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Technology & Innovation</h3>
+                    <p>With OneTrust veterans and seasoned tech experts, we ensure privacy tools are implemented effectively, unlocking their full potential and driving automation for operational excellence.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Collaboration & Clarity</h3>
+                    <p>We work as true partners with your teams, tailoring solutions to your culture and processes while providing clear guidance and actionable insights every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SPIDAC</h3>
+                    <p>Privacy Technology Specialists.</p>
+                    <p>We help organizations turn complex privacy regulations into streamlined, efficient, and technology-enabled operations.</p>
+                </div>
+              <div class="footer-section">
+                <h3>Services</h3>
+                <p><a href="https://spidac.com/privacytechimplementation.html">Privacy Tech Implementation</a></p>
+                <p><a href="https://spidac.com/privacydesignautomation.html">Privacy Design & Automation Advisory</a></p>
+                <p><a href="https://spidac.com/privacydesignautomation.html">Privacy & Data Protection Training</a></p>
+            </div>
+              <div class="footer-section">
+    <h3>Contact</h3>
+    <p><a href="mailto:contact@spidac.com">contact@spidac.com</a></p>
+    <p>
+        <a href="https://www.linkedin.com/company/spidac" target="_blank" style="color: #ccc; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fab fa-linkedin" style="font-size: 1.1rem; color: #0a66c2;"></i>
+            <span>LinkedIn</span>
+        </a>
+    </p>
+</div>
+
+            </div>
+            <div class="footer-bottom" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; border-top: 1px solid #555; padding-top: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                <p>&copy; 2025 SPIDAC. All rights reserved.</p>
+                <p><a href="https://spidac.com/privacy" style="color: #ccc; text-decoration: none;">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#fff';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.value-card, .training-card, .about-card, .team-card, .tech-logo').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+        // Mobile menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+    </script>
+
+
+</body>
+</html>

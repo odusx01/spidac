@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8e4b60ca-6840-4d39-996d-d869f0333afc" data-blockingmode="auto" type="text/javascript"></script>
+
+    <title>About SPIDAC - Privacy Technology Specialists</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        .who-we-are-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+/* Hamburger button styling */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1e2a5e;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* show hamburger */
+    }
+
+    .nav-links {
+        display: none; /* hide menu by default */
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 70px; /* under the header */
+        right: 20px;
+        background: #fff;
+        padding: 1rem 2rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* show menu when active */
+    }
+}
+
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #1e2a5e;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #1e2a5e;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            color: #fff;
+            padding: 120px 0 80px;
+            text-align: center;
+            margin-top: 70px;
+            overflow: hidden;
+            background: transparent !important;
+            isolation: isolate;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("banner.png"), linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
+            background-size: cover, 100% 100%;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+            filter: blur(14px);
+            transform: scale(1.08);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(16, 26, 64, 0.45);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            opacity: 0.9;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* WHO WE ARE */
+        .who-we-are {
+            padding: 80px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .who-we-are-text, .who-we-are-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .who-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: #000;
+            line-height: 1.8;
+            font-weight: 500;
+            border-left: 6px solid #1e2a5e;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .who-we-are-image img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        /* Vision & Mission Section */
+        .vision-mission {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .vm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .vm-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .vm-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .vm-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .vm-card h3 {
+            font-size: 1.8rem;
+            color: #1e2a5e;
+            margin-bottom: 1rem;
+        }
+
+        .vm-card p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Tech Slider */
+        .tech-stack {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .tech-slider {
+            overflow: hidden;
+            width: 100%;
+            padding: 1rem 0;
+        }
+
+        .tech-slider-track {
+            display: flex;
+            width: calc(200px * 12);
+            animation: slide 20s linear infinite;
+        }
+
+        .tech-slide {
+            min-width: 200px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tech-slide img {
+            max-width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .tech-slider:hover .tech-slider-track {
+            animation-play-state: paused;
+        }
+
+        /* Partnership CTA */
+        .partnership {
+            padding: 80px 0;
+            background: #1e2a5e;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-button-secondary {
+            background: white;
+            color: #1e2a5e;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button-secondary:hover {
+            background: #f5f5f5;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 2rem;
+            color: #999;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .vm-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17516084686">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17516084686');
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+    <a href="/" class="logo">SPIDAC</a>
+
+    <!-- Hamburger button (only shows on mobile) -->
+    <button class="hamburger" aria-label="Toggle Menu">☰</button>
+
+    <!-- Nav Links -->
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
+    </ul>
+</nav>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>About Us</h1>
+            <p class="subtitle">
+</p>
+            <p class="hero-description">
+ We provide privacy tech consulting, training, and implementation support that help organizations transform complex privacy requirements into streamlined, technology-enabled operations. 
+
+        </div>
+    </section>
+
+   <!-- WHO WE ARE Section -->
+<section class="value-props who-we-are"> 
+    <div class="container" style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
+        
+        <!-- Left: Text -->
+        <div class="who-we-are-text" style="flex: 1; min-width: 300px;">
+            <h3 class="section-title">WHO WE ARE</h3>
+
+            <!-- Styled Quote -->
+            <p class="who-quote">
+                "Navigating privacy and compliance is becoming increasingly complex across all sectors!"
+            </p>
+
+            <p>
+                Organizations struggle to fully leverage privacy technology and automation. At <strong>SPIDAC</strong>, we believe privacy management should be smart, seamless, and future-ready.
+            </p>
+
+            <p>
+                We provide consulting, training, and implementation support that transforms complex privacy requirements into streamlined, technology-enabled operations. This helps organizations <strong>increase efficiency, reduce risk, and unlock the full potential</strong> of privacy tools and automation.
+            </p>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="who-we-are-image" style="flex: 1; min-width: 300px;">
+         <br> <img src="banner1.JPG" alt="Who we are" loading="lazy" style="width: 120%; height: auto; border-radius: 12px;">
+        </div>
+
+    </div>
+</section>
+
+
+
+
+   
+    <!-- Vision & Mission -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <div class="vm-icon">🎯</div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading privacy technology consultancy that transforms compliance challenges into competitive advantages, enabling organizations to thrive in a privacy-first world while building lasting trust with their customers.</p>
+                </div>
+                <div class="vm-card">
+                    <div class="vm-icon">🚀</div>
+                    <h3>Our Mission</h3>
+                    <p>We empower organizations to unlock the full potential of their privacy technology investments through expert implementation, comprehensive training, and ongoing optimization that delivers measurable business value beyond compliance.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+<!-- Tech Stack Section -->
+<section class="tech-stack" id="tech-stack">
+    <div class="container">
+        <h3 style="color: #1e2a5e;">Our Tech Stack</h3>
+        <div class="tech-slider">
+            <div class="tech-slider-track">
+                <div class="tech-slide"><img src="logos/onetrust.png" alt="OneTrust" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/securitii.png" alt="Securiti" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/trustarc.png" alt="TrustArc" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/bigid.png" alt="BigID" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/datagrail.png" alt="DataGrail" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/collibra_logo.jpg" alt="Collibra" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/sourcepoint.jpg" alt="Sourcepoint" loading="lazy"></div>
+
+                <!-- duplicate for infinite loop -->
+                <div class="tech-slide"><img src="logos/onetrust.png" alt="OneTrust" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/securitii.png" alt="Securiti" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/trustarc.png" alt="TrustArc" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/bigid.png" alt="BigID" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/datagrail.png" alt="DataGrail" loading="lazy"></div>
+                <div class="tech-slide"><img src="logos/collibra_logo.jpg" alt="Collibra" loading="lazy"></div>
+                          <div class="tech-slide"><img src="logos/sourcepoint.jpg" alt="Sourcepoint" loading="lazy"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Final CTA -->
+    <section class="partnership" id="contact">
+        <div class="partnership-content">
+            <h1>
+                Privacy technology specialists helping businesses achieve compliance, operationalize privacy, and build trust.
+            </h1>
+            <br>
+            
+            <a href="mailto:contact@spidac.com" class="cta-button-secondary">Contact Us</a>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SPIDAC</h3>
+                <p>Privacy Technology Specialists.</p>
+                <p>We help organizations turn complex privacy regulations into streamlined, efficient, and technology-enabled operations.</p>
+            </div>
+           <div class="footer-section">
+                <h3>Services</h3>
+                <p><a href="https://spidac.com/privacytechimplementation.html">Privacy Tech Implementation</a></p>
+                <p><a href="https://spidac.com/privacydesignautomation.html">Privacy Design & Automation Advisory</a></p>
+                <p><a href="https://spidac.com/privacydesignautomation.html">Privacy & Data Protection Training</a></p>
+            </div>
+            <div class="footer-section">
+    <h3>Contact</h3>
+    <p><a href="mailto:contact@spidac.com">contact@spidac.com</a></p>
+    <p>
+        <a href="https://www.linkedin.com/company/spidac" target="_blank" style="color: #ccc; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+            <i class="fab fa-linkedin" style="font-size: 1.1rem; color: #0a66c2;"></i>
+            <span>LinkedIn</span>
+        </a>
+    </p>
+</div>
+        </div>
+
+      <!-- Footer Bottom -->
+<div class="footer-bottom" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; border-top: 1px solid #555; padding-top: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+    <p>&copy; 2025 SPIDAC. All rights reserved.</p>
+    <p><a href="https://spidac.com/privacy" style="color: #ccc; text-decoration: none;">Privacy Policy</a></p>
+    
+</div>
+    </div>
+</footer>
+
+
+    <script>
+    
+  
+
+
+
+    // Mobile menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#fff';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.value-card, .training-card, .about-card, .team-card, .tech-logo').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
