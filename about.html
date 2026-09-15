@@ -6,6 +6,7 @@
     <link rel="icon" href="logo/spidac.png" type="image/png">
     <link href="https://fonts.cdnfonts.com/css/hangyaboly" rel="stylesheet">
 <link rel="stylesheet" href="spidac-header.css">
+<link rel="stylesheet" href="spidac-global.css">
 
       <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8e4b60ca-6840-4d39-996d-d869f0333afc" data-blockingmode="auto" type="text/javascript"></script>
 
@@ -14,296 +15,15 @@
     <meta property="og:description" content="Learn about SPIDAC, privacy technology specialists dedicated to helping organizations operationalize privacy through expert consulting, implementation support, and training.">
     <meta property="og:type" content="website">
     <title>About SPIDAC - Privacy Technology Specialists</title>
-   <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Museo Sans', 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-        }
-        .who-we-are-image img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-/* Hamburger + mobile nav — see spidac-header.css */
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header — see spidac-header.css */
-        /* nav — see spidac-header.css */
-        /* .logo — see spidac-header.css */
-        /* .nav-links — see spidac-header.css */
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            color: #fff;
-            padding: 130px 0 80px;
-            margin-top: 70px;
-            background: linear-gradient(135deg, #0d1832 0%, #1e2a5e 60%, #2c3e7a 100%);
-            overflow: hidden;
-        }
-
-        .hero > .container {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            line-height: 1.2;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-description {
-            font-size: 1.1rem;
-            max-width: 900px;
-            margin: 0 auto 3rem;
-            opacity: 0.9;
-            line-height: 1.7;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* WHO WE ARE */
+    <style>
+        /* who-we-are layout — page-specific */
         .who-we-are {
-            padding: 80px 0;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: 3rem;
         }
-
-        .who-we-are-text, .who-we-are-image {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .who-quote {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            color: #000;
-            line-height: 1.8;
-            font-weight: 500;
-            border-left: 6px solid #1e2a5e;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        .who-we-are-image img {
-            width: 100%;
-            border-radius: 12px;
-        }
-
-        /* Vision & Mission Section */
-        .vision-mission {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .vm-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .vm-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 2px 12px rgba(13,24,50,0.07);
-            border: 1px solid #e8eaf0;
-            text-align: center;
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-
-        .vm-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(13,24,50,0.12);
-        }
-
-        .vm-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #1e2a5e 0%, #2c4aa0 100%);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: white;
-            margin: 0 auto 1.2rem;
-        }
-
-        .vm-card h3 {
-            font-size: 1.8rem;
-            color: #1e2a5e;
-            margin-bottom: 1rem;
-        }
-
-        .vm-card p {
-            font-size: 1.1rem;
-            color: #666;
-            line-height: 1.7;
-        }
-
-        /* Tech Slider */
-        .tech-stack {
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .tech-slider {
-            overflow: hidden;
-            width: 100%;
-            padding: 1rem 0;
-        }
-
-        .tech-slider-track {
-            display: flex;
-            width: calc(200px * 12);
-            animation: slide 20s linear infinite;
-        }
-
-        .tech-slide {
-            min-width: 200px;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tech-slide img {
-            max-width: 100%;
-            max-height: 100px;
-            object-fit: contain;
-        }
-
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .tech-slider:hover .tech-slider-track {
-            animation-play-state: paused;
-        }
-
-        /* CTA Section */
-        .partnership {
-            padding: 100px 0;
-            background: #0d1832;
-            color: white;
-            text-align: center;
-        }
-
-        .cta-button-secondary {
-            background: white;
-            color: #0d1832;
-            padding: 13px 28px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: background 0.2s ease, transform 0.2s ease;
-            display: inline-block;
-        }
-
-        .cta-button-secondary:hover {
-            background: #e8edf5;
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #ccc;
-        }
-
-        .footer-section p, .footer-section a {
-            color: #ccc;
-            text-decoration: none;
-            line-height: 1.6;
-        }
-
-        .footer-section a:hover {
-            color: white;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #555;
-            padding-top: 2rem;
-            color: #999;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .vm-grid { grid-template-columns: 1fr; }
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1e2a5e;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto 3rem;
-            line-height: 1.7;
-        }
-
-        /* Scroll reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
+        .who-we-are-text, .who-we-are-image { flex: 1; min-width: 300px; }
     </style>
     
     <!-- Google tag (gtag.js) -->
@@ -323,11 +43,11 @@
 <body>
     <div id="header"></div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- Page Hero -->
+    <section class="page-hero">
         <div class="container">
             <h1>About SPIDAC</h1>
-            <p class="hero-description">We are privacy technology specialists. We help organisations select, implement, and get the most from their privacy tools — so compliance becomes an operation, not a burden.</p>
+            <p>We are privacy technology specialists. We help organisations select, implement, and get the most from their privacy tools — so compliance becomes an operation, not a burden.</p>
         </div>
     </section>
 

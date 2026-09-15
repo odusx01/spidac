@@ -5,7 +5,11 @@
       "WebFetch(domain:www.onetrust.com)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git -C C:/xampp1/htdocs/spidac status error_log)"
     ]
   }
 }
